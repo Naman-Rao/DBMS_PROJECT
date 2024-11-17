@@ -1,0 +1,38 @@
+.info-section {
+    display: flex;
+    margin: 20px 0;
+  }
+  
+  .sidebar {
+    width: 30%;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 8px 0;
+    color: #555;
+  }
+  
+  .content {
+    width: 70%;
+    padding: 15px;
+  }
+  
+  .content h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  

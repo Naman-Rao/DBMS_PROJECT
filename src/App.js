@@ -1,24 +1,49 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Features from './pages/Features';
+import Pricing from './pages/Pricing';
+import Support from './pages/Support';
+import Contact from './pages/Contact';
+import Header from './components/Header';
+import CloudResourceManagement from './components/CloudResourceManagement';
+import Login from './components/Login';
 import './App.css';
+import AdmHub from './components/login-succ/Admin/AdmHub';
+import AdmHeader from './components/login-succ/Admin/AdmHeader';
+import Account from './components/login-succ/Admin/account';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Header />} />
+        <Route path="/about" element={<Header />} />
+        <Route path="/features" element={<Header />} />
+        <Route path="/pricing" element={<Header/>} />
+        <Route path="/support" element={<Header/>} />
+        <Route path="/contact" element={<Header/>} />
+        <Route path="/login" element={<Header />} />
+        <Route path="/admhub" element={<AdmHeader />} />
+        <Route path="/admhub/account" element={<AdmHeader />} />
+
+      </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admhub" element={<AdmHub />} />
+        <Route path='/admhub/account' element={<Account/>}/>
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

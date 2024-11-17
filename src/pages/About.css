@@ -1,0 +1,25 @@
+/* About.css */
+.about-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents overflow during animation */
+}
+
+
+.features, .ui-description, .tech-stack {
+    margin-top: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.features li strong {
+    font-weight: bold;
+    color: #333;
+}
