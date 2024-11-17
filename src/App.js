@@ -15,7 +15,11 @@ import './App.css';
 import AdmHub from './components/login-succ/Admin/AdmHub';
 import AdmHeader from './components/login-succ/Admin/AdmHeader';
 import Account from './components/login-succ/Admin/account';
-
+import Billing from './components/login-succ/Admin/Billing';
+import JobScheduler from './components/login-succ/Admin/JobScheduler';
+import Service from './components/login-succ/Admin/Service';
+import Cluster from './components/login-succ/Admin/Cluster';
+import Logs from './components/login-succ/Admin/Logs';
 function App() {
   return (
     <Router>
@@ -29,6 +33,13 @@ function App() {
         <Route path="/login" element={<Header />} />
         <Route path="/admhub" element={<AdmHeader />} />
         <Route path="/admhub/account" element={<AdmHeader />} />
+        <Route path='/admhub/Billing' element={<AdmHeader/>}/>
+        <Route path='/admhub/JobScheduler' element={<AdmHeader/>}/>
+        <Route path='/admhub/Service' element={<AdmHeader/>}/>
+        <Route path='/admhub/Cluster' element={<AdmHeader/>}/>
+        <Route path='/admhub/Logs' element={<AdmHeader/>}/>
+        
+        
 
       </Routes>
       <Routes>
@@ -41,6 +52,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/admhub" element={<AdmHub />} />
         <Route path='/admhub/account' element={<Account/>}/>
+        <Route path='/admhub/Billing' element={<Billing/>}/>
+        <Route path='/admhub/JobScheduler' element={<JobScheduler/>}/>
+        <Route path='/admhub/Service' element={<Service/>}/>
+        <Route path='/admhub/Cluster' element={<Cluster/>}/>
+        <Route path='/admhub/Logs' element={<Logs/>}/>
+
       </Routes>
       <Footer />
     </Router>
