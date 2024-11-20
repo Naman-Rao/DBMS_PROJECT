@@ -1,0 +1,36 @@
+.main-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .main-content h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .main-content p {
+    font-size: 1.1em;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 15px;
+  }
+  
+  .tour-btn, .steps-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .tour-btn {
+    background-color: #0073e6;
+  }
+  
+  .steps-btn {
+    background-color: #333;
+  }
+  

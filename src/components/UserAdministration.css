@@ -1,0 +1,23 @@
+/* UserAdministration.css */
+.user-administration-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.admin-features {
+    margin-top: 20px;
+}
+
+.admin-features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-features li {
+    margin-bottom: 10px;
+}
+
+.admin-features h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
